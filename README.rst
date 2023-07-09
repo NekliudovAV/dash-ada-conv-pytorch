@@ -15,35 +15,8 @@ If something was unclear I tried to do what AdaIn does instead. Results are at t
 Usage
 -----
 
-The parameters in the commands below are the default parameters and can thus be omitted unless you want to use different options.
-Check the help option (``-h`` or ``--help``) for more information about all parameters.
-To train a new model:
-
-.. code::
-
-    python train.py --content ./data/MSCOCO/train2017 --style ./data/WikiArt/train
-
-
-To resume training from a checkpoint (.ckpt files are saved in the log directory):
-
-.. code::
-
-    python train.py --checkpoint <path-to-ckpt-file>
-
-
-To apply the model on a single style-content pair:
-
-.. code::
-
-    python stylize.py --content ./content.png --style ./style.png --output ./output.png --model ./model.ckpt
-
-
-To apply the model on every style-content combination in a folder and create a table of outputs:
-
-.. code::
-
-    python test.py --content-dir ./test_images/content --style-dir ./test_images/style --output-dir ./test_images/output --model ./model.ckpt
-
+Для запуска приложения необходимо запустить Load.py
+Перед запуском приложения скачать и переместить файл model.ckpt в корневую папку
 
 Weights
 =======
