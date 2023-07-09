@@ -1,3 +1,5 @@
+В качестве исходного проекта был взят https://github.com/RElbers/ada-conv-pytorch
+
 AdaConv
 ==============================
 
