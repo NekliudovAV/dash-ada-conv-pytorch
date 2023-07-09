@@ -209,4 +209,5 @@ if __name__ == '__main__':
     model = LightningModel.load_from_checkpoint(checkpoint_path='./model.ckpt')
     model = model.to(torch.device("cuda:0" if torch.cuda.is_available() else "cpu"))
     model.eval()
-    app.run_server(debug=True, host='192.168.3.26')
+    app.run_server(debug=True, host='192.168.3.26') # Необходимо указать IP своего компьютера
+    
